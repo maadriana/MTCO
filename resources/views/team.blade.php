@@ -39,14 +39,14 @@
                 @foreach ($teamMembers as $member)
                     <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-card position-relative overflow-hidden rounded shadow-sm">
-                       <img src="{{ asset($member['image']) }}" class="img-fluid team-image" alt="{{ $member['name'] }}" style="width: 90%; height: 320px; object-fit: cover;">
-                       <div class="team-social position-absolute d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
-                       <a href="{{ $member['social']['facebook'] }}" class="mx-2"><i class="lni lni-facebook-filled"></i></a>
-                       <a href="{{ $member['social']['twitter'] }}" class="mx-2"><i class="lni lni-twitter-original"></i></a>
-                       <a href="{{ $member['social']['instagram'] }}" class="mx-2"><i class="lni lni-instagram-original"></i></a>
-                       <a href="{{ $member['social']['linkedin'] }}" class="mx-2"><i class="lni lni-linkedin-original"></i></a>
-                   </div>
-               </div>
+                        <img src="{{ asset($member['image']) }}" class="img-fluid team-image" alt="{{ $member['name'] }}" style="width: 90%; height: 320px; object-fit: cover;">
+                        <div class="team-social position-absolute d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
+                        <a href="{{ $member['social']['facebook'] }}" class="mx-2"><i class="lni lni-facebook-filled"></i></a>
+                        <a href="{{ $member['social']['twitter'] }}" class="mx-2"><i class="lni lni-twitter-original"></i></a>
+                        <a href="{{ $member['social']['instagram'] }}" class="mx-2"><i class="lni lni-instagram-original"></i></a>
+                        <a href="{{ $member['social']['linkedin'] }}" class="mx-2"><i class="lni lni-linkedin-original"></i></a>
+                    </div>
+                </div>
                         <h5 class="mt-3 fw-bold">{{ $member['name'] }}</h5>
                         <p class="text-muted">{{ $member['role'] }}</p>
                     </div>
